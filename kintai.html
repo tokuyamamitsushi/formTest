@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>交通費・経費精算フォーム</title>
+    <script type="text/javascript" src="https://myasptrial.net/js/jquery-1.7.1.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+
+    <body>
+    <div class="container">
+                
+    <div class="content_title bg-">
+        <h1>勤怠入力フォーム</h1>
+    </div>
+
+
+            <div class="content_form">
+                <form action="https://*******" enctype="multipart/form-data" id="UserItemForm" class="myForm" method="post" accept-charset="utf-8">
+                <input type="hidden" name="_method" value="POST"/>
+                    
+            
+                <!-- 調査結果ID -->
+                <div class="form-group">
+                    <label for="Userfree1">勤怠ID</label>
+                    <input name="data[User][free1]" id="Userfree1" value="" class="form-control mb-2" type="text" readonly="" required="">
+                </div>
+
+                <!-- 隊員ID -->
+                <div class="form-group">
+                    <label for="Userfree2">リーダー隊員ID</label>
+                    <input name="data[User][free2]" id="Userfree2" value="" class="form-control mb-2" type="text" readonly="" required="">
+                </div>
+
+                <!-- 隊員名 -->
+                <div class="form-group">
+                    <label for="Userfree3">リーダー隊員名</label>
+                    <input name="data[User][free3]" id="Userfree3" value="" class="form-control mb-2" type="text" readonly="" required="">
+                </div>
+
+            <section id=form1 class="shadow container p-3">
+                <h2>勤務情報入力フォーム1</h2>
+                <!-- 隊員ID -->
+                <div class="form-group">
+                    <label for="Userfree4">隊員ID</label>
+                    <input name="data[User][free4]" id="Userfree3" value="" class="form-control mb-2" type="text">
+                </div>
+
+                <!-- 隊員名-->
+                <div class="form-group">
+                    <label for="data[User][free5]">隊員名</label>
+                    <input name="data[User][free5]" id="Userfree5" value="" class="form-control mb-2" type="text">
+                </div>
+
+                <!-- 勤務区分-->
+                <div class="form-group">
+                    <label for="data[User][free6]">勤務区分</label>
+                    <select class="form-control" name="data[User][free6]" id="Userfree6">
+                        <option></option>
+                        <option value="朝勤務">朝勤務</option>
+                        <option value="通常勤務">通常勤務</option>
+                        <option value="夜勤務">夜勤務</option>
+                        <option value="深夜勤務">深夜勤務</option>
+                    </select>
+                </div>
+
+
+                <!-- 勤務日 -->
+                <div class="form-group">
+                    <label for="Userfree7">勤務日</label>
+                    <input name="data[User][free7]" id="Userfree7" value="" class="form-control mb-2" type="date">
+                </div>
+
+
+                <!-- 勤務開始時間 -->
+                <div class="form-group">
+                    <label for="Userfree8">勤務開始時間</label>
+                    <input name="data[User][free8]" id="Userfree8" value="" class="form-control mb-2" type="time">
+                </div>
+
+                <!-- 勤務終了時間 -->
+                <div class="form-group">
+                    <label for="Userfree9">勤務終了時間</label>
+                    <input name="data[User][free9]" id="Userfree9" value="" class="form-control mb-2" type="time">
+                </div>
+
+                <!-- 休憩時間-->
+                <div class="form-group">
+                    <label for="data[User][free10]">休憩時間</label>
+                    <select class="form-control" name="data[User][free10]" id="Userfree10">
+                        <option></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <!-- 備考 -->
+                <div class="form-group">
+                    <label>備考</label>
+                    <textarea class="form-control" name="data[User][free11]" id="Userfree11" rows="3"></textarea>
+                </div>
+
+            </section>
+
+                <section id=form1 class="shadow container p-3">
+                    <h2>勤務情報入力フォーム2</h2>
+                    <!-- 隊員ID -->
+                    <div class="form-group">
+                        <label for="Userfree4">隊員ID</label>
+                        <input name="data[User][free4]" id="Userfree3" value="" class="form-control mb-2" type="text">
+                    </div>
+    
+                    <!-- 隊員名-->
+                    <div class="form-group">
+                        <label for="data[User][free5]">隊員名</label>
+                        <input name="data[User][free5]" id="Userfree5" value="" class="form-control mb-2" type="text">
+                    </div>
+    
+                    <!-- 勤務区分-->
+                    <div class="form-group">
+                        <label for="data[User][free6]">勤務区分</label>
+                        <select class="form-control" name="data[User][free6]" id="Userfree6">
+                            <option></option>
+                            <option value="朝勤務">朝勤務</option>
+                            <option value="通常勤務">通常勤務</option>
+                            <option value="夜勤務">夜勤務</option>
+                            <option value="深夜勤務">深夜勤務</option>
+                        </select>
+                    </div>
+    
+    
+                    <!-- 勤務日 -->
+                    <div class="form-group">
+                        <label for="Userfree7">勤務日</label>
+                        <input name="data[User][free7]" id="Userfree7" value="" class="form-control mb-2" type="date">
+                    </div>
+    
+    
+                    <!-- 勤務開始時間 -->
+                    <div class="form-group">
+                        <label for="Userfree8">勤務開始時間</label>
+                        <input name="data[User][free8]" id="Userfree8" value="" class="form-control mb-2" type="time">
+                    </div>
+    
+                    <!-- 勤務終了時間 -->
+                    <div class="form-group">
+                        <label for="Userfree9">勤務終了時間</label>
+                        <input name="data[User][free9]" id="Userfree9" value="" class="form-control mb-2" type="time">
+                    </div>
+    
+                    <!-- 休憩時間-->
+                    <div class="form-group">
+                        <label for="data[User][free10]">休憩時間</label>
+                        <select class="form-control" name="data[User][free10]" id="Userfree10">
+                            <option></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+    
+                    <!-- 備考 -->
+                    <div class="form-group">
+                        <label>備考</label>
+                        <textarea class="form-control" name="data[User][free11]" id="Userfree11" rows="3"></textarea>
+                    </div>
+
+
+                </section>
+
+                    <section id=form1 class="shadow container p-3">
+                        <h2>勤務情報入力フォーム3</h2>
+                        <!-- 隊員ID -->
+                        <div class="form-group">
+                            <label for="Userfree4">隊員ID</label>
+                            <input name="data[User][free4]" id="Userfree3" value="" class="form-control mb-2" type="text">
+                        </div>
+        
+                        <!-- 隊員名-->
+                        <div class="form-group">
+                            <label for="data[User][free5]">隊員名</label>
+                            <input name="data[User][free5]" id="Userfree5" value="" class="form-control mb-2" type="text">
+                        </div>
+        
+                        <!-- 勤務区分-->
+                        <div class="form-group">
+                            <label for="data[User][free6]">勤務区分</label>
+                            <select class="form-control" name="data[User][free6]" id="Userfree6">
+                                <option></option>
+                                <option value="朝勤務">朝勤務</option>
+                                <option value="通常勤務">通常勤務</option>
+                                <option value="夜勤務">夜勤務</option>
+                                <option value="深夜勤務">深夜勤務</option>
+                            </select>
+                        </div>
+        
+        
+                        <!-- 勤務日 -->
+                        <div class="form-group">
+                            <label for="Userfree7">勤務日</label>
+                            <input name="data[User][free7]" id="Userfree7" value="" class="form-control mb-2" type="date">
+                        </div>
+        
+        
+                        <!-- 勤務開始時間 -->
+                        <div class="form-group">
+                            <label for="Userfree8">勤務開始時間</label>
+                            <input name="data[User][free8]" id="Userfree8" value="" class="form-control mb-2" type="time">
+                        </div>
+        
+                        <!-- 勤務終了時間 -->
+                        <div class="form-group">
+                            <label for="Userfree9">勤務終了時間</label>
+                            <input name="data[User][free9]" id="Userfree9" value="" class="form-control mb-2" type="time">
+                        </div>
+        
+                        <!-- 休憩時間-->
+                        <div class="form-group">
+                            <label for="data[User][free10]">休憩時間</label>
+                            <select class="form-control" name="data[User][free10]" id="Userfree10">
+                                <option></option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+        
+                        <!-- 備考 -->
+                        <div class="form-group">
+                            <label>備考</label>
+                            <textarea class="form-control" name="data[User][free11]" id="Userfree11" rows="3"></textarea>
+                        </div>
+                    </section>
+            </section>
+
+
+
+                <!-- 確認ボタン -->
+                <input id="idstamp" name="idstamp" type="hidden">
+                <button type="submit" id="saveForm" name="saveForm" class="btn btn-primary btn-lg btn-block my-5">送信する</button>
+            </div>
+
+
+
+    <script src="https://myasptrial.net/js/validation.js?d=20200427122801"></script>
+
+    <script>
+            function validate(code){
+                    if(code.match(/[ -~｡-ﾟ]|[^ -~｡-ﾟ]+$/)){
+                            return true;
+                    }
+                    else{
+                            return false;
+                    }
+            }
+    </script>
+
+
+    <script>
+    (function(){
+    var invitationHelper  = {
+        init  : function(){
+        var queryString = window.location.search;
+        if(!queryString){return}
+        var queryHash = this.parse(queryString);
+        if(validate(queryHash.code1)){
+            this.insertCode(queryHash.code1);
+        }
+        },
+        parse : function(query){
+        var hash  = {};
+        var arr = query.substring(1).split('&');
+        var len = arr.length;
+        for(var i=0;i<len;i++){
+            var tmp = arr[i].split('=');
+            hash[tmp[0]] = decodeURIComponent(tmp[1]);
+        }
+        return hash;
+        },
+        insertCode : function(code1){
+        document.getElementById('Userfree1').value = code1;
+        }
+    };
+    invitationHelper.init();
+    })();
+    </script>
+
+    <script>
+        (function(){
+        var invitationHelper  = {
+            init  : function(){
+            var queryString = window.location.search;
+            if(!queryString){return}
+            var queryHash = this.parse(queryString);
+            if(validate(queryHash.code2)){
+                this.insertCode(queryHash.code2);
+            }
+            },
+            parse : function(query){
+            var hash  = {};
+            var arr = query.substring(1).split('&');
+            var len = arr.length;
+            for(var i=0;i<len;i++){
+                var tmp = arr[i].split('=');
+                hash[tmp[0]] = decodeURIComponent(tmp[1]);
+            }
+            return hash;
+            },
+            insertCode : function(code2){
+            document.getElementById('Userfree2').value = code2;
+            }
+        };
+        invitationHelper.init();
+        })();
+        </script>
+
+    <script>
+        (function(){
+        var invitationHelper  = {
+            init  : function(){
+            var queryString = window.location.search;
+            if(!queryString){return}
+            var queryHash = this.parse(queryString);
+            if(validate(queryHash.code3)){
+                this.insertCode(queryHash.code3);
+            }
+            },
+            parse : function(query){
+            var hash  = {};
+            var arr = query.substring(1).split('&');
+            var len = arr.length;
+            for(var i=0;i<len;i++){
+                var tmp = arr[i].split('=');
+                hash[tmp[0]] = decodeURIComponent(tmp[1]);
+            }
+            return hash;
+            },
+            insertCode : function(code3){
+            document.getElementById('Userfree3').value = code3;
+            }
+        };
+        invitationHelper.init();
+        })();
+        </script>
+
+        </body>
+    </html>
+
